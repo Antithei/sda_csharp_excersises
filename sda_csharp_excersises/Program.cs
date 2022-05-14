@@ -6,7 +6,7 @@ namespace sda_csharp_excersises
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
         }
     }
 }
