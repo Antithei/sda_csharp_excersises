@@ -15,8 +15,8 @@ namespace sda_csharp_excersises
         static void BubbleSort(int[] numbers)
         {
             int temp;
-            for (int i = numbers.Length - 1; i > 0; i--)
-                for (int j = 0; j < i; j++)
+            for (int i = 0; i < numbers.Length - 1; i++)
+                for (int j = 0; j < numbers.Length - i - 1; j++)
                     if (numbers[j] > numbers[j + 1])
                     {
                         temp = numbers[j];
