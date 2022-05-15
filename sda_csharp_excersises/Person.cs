@@ -27,7 +27,7 @@ namespace sda_csharp_excersises
 
         public int YearOfBirth { get; init; }
 
-        public void WhoAmI()
+        public virtual void WhoAmI()
         {
             Console.WriteLine($"My name is {FirstName} {LastName}.");
         }

@@ -6,40 +6,16 @@ namespace sda_csharp_excersises
     {
         static void Main(string[] args)
         {
-            //Person person = new Person();
-            //person.FirstName = "Jan"; //set
-            //person.FirstName = ""; //imię nie ulegnie zmianie
-            //Console.WriteLine(person.FirstName); //get
-
-            //Person person = new Person();
-            //var person = new Person();
-
-            Person[] guests = new Person[]
+            Employee[] employees = new Employee[]
             {
-                new Person("Jan", "Kowalski", 1990),
-                new Employee("Adam", "Nowak", 2000, 5_000.00M),
-                new Person(),
-                new Person
-                {   //blok inicjalizacyjny konstruktora
-                    FirstName = "Ewa",
-                    LastName = "Niedźwiecka",
-                    YearOfBirth = 2010
-                }
+                new Employee("Jan", "Kowalski",1990, 5_000.00M),
+                new Manager("Adam", "Nowacki",2000, 5_000.00M)
             };
 
-            Console.WriteLine("---------------------------");
-
-            foreach (var guest in guests)
+            foreach (var employee in employees)
             {
-                guest.WhoAmI();
-                if (guest is Employee employee)
-                {
-                    Console.WriteLine($"Salary: {employee.Salary}");
-                }
+                employee.WhoAmI();
             }
-
-            Console.WriteLine("---------------------");
-            PrintHello(guests);
         }
 
         static void PrintHello(Person[] guests)

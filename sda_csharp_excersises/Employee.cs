@@ -15,5 +15,16 @@
             Salary = salary;
             System.Console.WriteLine($"{nameof(Employee)} created with parameters");
         }
+
+        public override void WhoAmI()
+        {
+            base.WhoAmI();
+            System.Console.WriteLine($"My salary is {GetTotalSalary():C2}");
+        }
+
+        public virtual decimal GetTotalSalary()
+        {
+            return Salary;
+        }
     }
 }
