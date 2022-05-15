@@ -23,9 +23,9 @@ namespace sda_csharp_excersises
             }
         }
 
-        public string LastName { get; set; }
+        public string LastName { get; init; }
 
-        public int YearOfBirth { get; set; }
+        public int YearOfBirth { get; init; }
 
         public void WhoAmI()
         {
@@ -45,7 +45,7 @@ namespace sda_csharp_excersises
             Console.WriteLine($"{nameof(Person)} created without parameters");
         }
 
-        public Person(string firstName, string lastName,int yearOfBirth)
+        public Person(string firstName="<NIEZNANE>", string lastName = "<NIEZNANE>",int yearOfBirth = 0)
         {
             _firstName = firstName;
             LastName = lastName;
