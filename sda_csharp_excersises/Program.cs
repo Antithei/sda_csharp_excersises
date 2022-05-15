@@ -6,7 +6,17 @@ namespace sda_csharp_excersises
     {
         static void Main(string[] args)
         {
-            // TODO: add your solution here...
+            //Person person = new Person();
+            //person.FirstName = "Jan"; //set
+            //person.FirstName = ""; //imię nie ulegnie zmianie
+            //Console.WriteLine(person.FirstName); //get
+
+            //Person person = new Person();
+            //var person = new Person();
+
+
+
+            
         }
     }
 }
